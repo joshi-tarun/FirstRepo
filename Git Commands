@@ -1,0 +1,155 @@
+
+GIT
+
+Install git on ubuntu
+ 
+	sudo apt-get install git
+	
+Get git version
+	
+	git --version
+	
+Set user-name on local git
+	
+	git config --global user.name joshi-tarun
+	
+Get username on local gir
+	
+	git config --global user.name
+	
+	
+Set email on local git
+	
+	git config --global user.email tarun.joshi@tworoads-trading.co.in
+	
+Get email on local git
+	
+	git config --global user.email
+	
+Directly make changes on the configuration file
+	
+	git config --global --edit
+	
+	
+Git Repository is a project/folder which is monitored or tracked with the help of git software
+
+Initalize a folder to git
+	
+	git init
+
+Status of a file
+	
+	git status
+	
+	Status can be untracked, Unmodified, Modified, Staging area
+	
+
+Change status of a file from untracked to track (Staging area)
+
+	git add index.html
+	
+ 
+Save Current file structure / Inital commit
+
+
+	git commit -m "First Commit"
+	
+	First commit also store the message with this commit
+	
+
+Create a file with the help of terminal
+
+	touch name.html
+	
+To track all the untracked/modified files at once and move them to staging area
+	
+	git track -A
+	git add .
+	
+
+To commit again skipping the use of VIM editor
+
+	git commit -m "Commit Message"
+
+To retrive the last committed file after multiple changes had been made
+
+	git checkout contact.html
+	
+	git checkout (Hashcode of the commit from git log)
+	
+	git checkout master 	
+	  	
+To retrive the last committed folder after multiple changes had been made
+
+	git checkout -f
+	
+
+To check all the commits
+
+
+	git log
+	
+
+To check only last n (n = 5) commits
+	
+	git log -p -n
+	git log -p -5
+	
+To print the changes in the orginal file and modified file
+
+	git diff
+	
+Directly commit skipping ataging area
+
+	git commit -a -m "Skipped staging area"
+	
+
+Delete file from everwhere 
+	
+	git rm contact.html
+	
+
+Short status of a reposistry
+
+	git status -s
+	
+
+
+
+
+Master Branch
+
+Create a new branch from existing master branch
+
+	git branch feature1  // feature1 is the branch name
+
+
+Check current branch
+	
+	git branch
+
+Change to another directory
+
+	git checkout feature1
+
+
+Merge feature1 branch with Master branch
+
+	git merger feature1
+
+Create an directly take to the newely created branch
+
+	git checkout -b feature2
+	
+
+Create a gitignore file
+
+	touch .gitignore
+	
+	Now add all the required file in .gitignore file
+	
+	gitignore file can also be added inside gitignore file to avoid tracking 
+	
+	
+
+
